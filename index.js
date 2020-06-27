@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 8080
+const port = 80
 const bodyParser = require('body-parser')
 const log4js = require("log4js");
 log4js.configure({
